@@ -1,0 +1,836 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-nav {
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #174489, #CB6CE6);
+    flex-wrap: wrap;
+}
+
+.header-logo img {
+    width: 30px;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header-link ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header-link ul li {
+    list-style: none;
+}
+
+.header-link ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+nav {
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-link ul li {
+    list-style: none;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav-action button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: #174489;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(to top right, #174589ab, #cc6ce67c);
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background: #e68900;
+}
+
+.terms-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.terms-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terms-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.terms-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.terms-card h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.terms-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.pesan-tukang {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('assets/rectangle11.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pesan-tukang .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 51, 153, 0.6);
+}
+
+.pesan-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.pesan-content h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.how-to-order {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.how-to-order h5 {
+    color: #174489;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.how-to-order h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.order-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #CB6CE6;
+}
+
+.order-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.cta-section {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: url('assets/cta.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-content h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.layanan {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.layanan h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.layanan-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.layanan-card {
+    position: relative;
+    background: url('assets/bg-layanan.jpg') no-repeat center center/cover;
+    height: 220px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.layanan-card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 34, 102, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.layanan-card h3,
+.layanan-card p,
+.layanan-card button {
+    position: relative;
+    z-index: 2;
+}
+
+.layanan-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.layanan-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.layanan-card button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.layanan-card button:hover {
+    background: white;
+    color: #002266;
+}
+
+.tips-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.tips-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tips-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tips-card:hover {
+    transform: translateY(-5px);
+}
+
+.tips-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tips-content {
+    padding: 15px;
+}
+
+.tips-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tips-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.keuntungan-section {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: url('assets/keuntungan.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keuntungan-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.keuntungan-content h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-title h3 {
+    font-size: 16px;
+    color: #1f3a93;
+    margin-bottom: 5px;
+}
+
+.form-title h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #1f3a93;
+    margin: 5px auto 15px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.jadwal-container {
+    display: flex;
+    gap: 10px;
+}
+
+.jadwal-container input {
+    flex: 1;
+}
+
+.submit-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #f1c40f;
+}
+
+.footer {
+    background-color: #0A3878;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-brand img{
+    width: 30px;
+}
+
+.footer-brand h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.copyright a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-nav, .footer-contact {
+    max-width: 200px;
+}
+
+.footer-nav h4, .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-payment img {
+    height: 30px;
+}
+
+@media (max-width: 1023px) {
+    .header-nav, nav {
+        padding: 10px 3%;
+    }
+
+    .header-link ul, .nav-link ul {
+        gap: 8px;
+    }
+
+    .header-logo a {
+        font-size: 16px;
+    }
+
+    .nav-link ul li a, .nav-action button {
+        font-size: 0.85rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .terms-card {
+        min-width: 200px;
+        padding: 15px;
+    }
+
+    .terms-card h1 {
+        font-size: 16px;
+    }
+
+    .terms-card p {
+        font-size: 13px;
+    }
+
+    .layanan-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .layanan-card {
+        height: 200px;
+    }
+
+    .layanan-card h3 {
+        font-size: 18px;
+    }
+
+    .layanan-card p {
+        font-size: 13px;
+    }
+
+    .order-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-card {
+        width: 80%;
+    }
+
+    .tips-card {
+        width: 45%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand, .footer-nav, .footer-contact, .footer-payment {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-nav, nav {
+        padding: 10px 2%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-link ul, .nav-link ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header-logo a {
+        font-size: 14px;
+    }
+
+    .nav-link ul li a, .nav-action button {
+        font-size: 0.8rem;
+    }
+
+    .nav-action button {
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-content button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .terms-card {
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .terms-card h1 {
+        font-size: 14px;
+    }
+
+    .terms-card p {
+        font-size: 12px;
+    }
+
+    .layanan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .layanan-card {
+        height: 180px;
+    }
+
+    .layanan-card h3 {
+        font-size: 16px;
+    }
+
+    .layanan-card p {
+        font-size: 12px;
+    }
+
+    .order-container {
+        flex-direction: column;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+
+    .tips-card {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand, .footer-nav, .footer-contact, .footer-payment {
+        margin-bottom: 20px;
+    }
+
+    .footer-brand h2 {
+        font-size: 20px;
+    }
+
+    .footer-brand p {
+        font-size: 12px;
+    }
+
+    .footer-nav h4, .footer-contact h4 {
+        font-size: 16px;
+    }
+
+    .footer-nav ul li a, .footer-contact p {
+        font-size: 12px;
+    }
+
+    .footer-payment img {
+        height: 25px;
+    }
+}
